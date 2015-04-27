@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false">
+
+    <!--Buttons 1 and 2, each taking up 1/2 the height of the view and 1/3 the width-->
+    <!--Buttons provide visual feedback when clicked via the button_highlighter drawable-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--Button 1-->
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/text_button1"
+            android:clickable="true"
+            android:id="@+id/button1"
+            android:background="@drawable/button_highlighter"
+            tools:ignore="NestedWeights"/>
+
+        <!--Button 2-->
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/text_button2"
+            android:clickable="true"
+            android:id="@+id/button2"
+            android:background="@drawable/button_highlighter"/>
+
+    </LinearLayout>
+
+    <!--String list, taking up the full height of the view and 2/3 the width-->
+    <ListView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:id="@+id/listView"/>
+
+</LinearLayout>

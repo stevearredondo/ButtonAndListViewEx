@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--On button press-->
+    <item android:drawable="@android:color/transparent"
+          android:state_pressed="true"/>
+
+    <!--No button press-->
+    <item android:drawable="@android:color/darker_gray"
+          android:state_pressed="false"/>
+</selector>
